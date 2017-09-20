@@ -1,0 +1,26 @@
+功能介绍：实践自己的前端demo，manage里的demo模块是相关的一些简单实践demo。
+
+1. node环境配置
+2. 安装co模块：
+    npm install co
+3. 写好代码，然后启动server:
+    node server-co.js
+
+一、前端
+
+    1、js代码使用es6风格编写；
+    2、使用babel将es6代码转为es5代码；
+    3、babel工具安装/使用（http://www.cnblogs.com/zhenwen/archive/2016/07/17/5679589.html）：
+        （1）、npm install -g babel-cli
+        （2）、npm install --save babel-preset-es2015
+        （3）、新建.babelrc文件，写入：
+            {
+    　　　      "presets": ['es2015']
+        　  }
+        （4）、package.json中配置：
+            "babel": {
+   　　         "presets": ["es2015"]
+            }
+        （5）、babel使用：
+            a、babel es6.js -o es5.js
+            b、babel src -d lib  编译整个src文件夹中js文件到lib文件夹
